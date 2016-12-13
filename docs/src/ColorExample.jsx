@@ -10,9 +10,6 @@ import {
 
 export default class ColorExample extends Component {
   render() {
-    console.log(_.map(colors, (code, name) => {
-      console.log(code, name);
-    }));
     return (
       <div>
         <h2>Colors</h2>
