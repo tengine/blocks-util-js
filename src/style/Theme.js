@@ -50,6 +50,6 @@ export const defaultTheme = getMuiTheme({
     backgroundColor: 'transparent',
   },
   overlay: {
-    backgroundColor: 'lightGray',
+    backgroundColor: 'rgba(0, 0, 0, 0.3)',
   },
 });
