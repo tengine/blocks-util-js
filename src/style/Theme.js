@@ -1,9 +1,14 @@
 import _ from 'lodash';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
-import { white, 
+// import { white, 
+//   cyan500, cyan600,
+//   grey300, grey500, lightGrey600, red500, blue500,
+// } from './colors';
+import { colors } from './colors';
+const { white, 
   cyan500, cyan600,
-  grey300, grey500, lightGrey600, red500, 
-} from './colors';
+  grey300, grey500, lightGrey600, red500, blue500
+} = colors;
 
 export const defaultTheme = getMuiTheme({
   /**
@@ -15,7 +20,7 @@ export const defaultTheme = getMuiTheme({
     desktopToolbarHeight: 30,
   },
   palette: {
-    primary1Color: cyan500,
+    primary1Color: cyan600,
     primary2Color: cyan600,
     primary3Color: grey300,
     accent1Color: red500,
@@ -35,9 +40,6 @@ export const defaultTheme = getMuiTheme({
    * @see {@link https://github.com/callemall/material-ui/tree/master/src}
    */
   button: {
-    textTransform: 'none',
-  },
-  flatButton: {
     textTransform: 'none',
   },
   dialog: {
