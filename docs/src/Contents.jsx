@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import RaisedButton from 'material-ui/RaisedButton';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import { 
   defaultTheme,
@@ -7,6 +6,7 @@ import {
 
 import DialogExample from './DialogExample';
 import FlatButtonExample from './FlatButtonExample';
+import RaisedButtonExample from './RaisedButtonExample';
 import FontAwesomeExample from './FontAwesomeExample';
 import MaterialIconExample from './MaterialIconExample';
 import ColorExample from './ColorExample';
@@ -17,6 +17,7 @@ export default class Main extends Component {
     return (
       <div className="container pt-3 pb-3 markdown-body">
         <FlatButtonExample />
+        <RaisedButtonExample />
         <DialogExample />
         <FontAwesomeExample />
         <MaterialIconExample />
