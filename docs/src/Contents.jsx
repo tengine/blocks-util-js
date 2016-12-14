@@ -11,6 +11,7 @@ import RaisedButtonExample from './RaisedButtonExample';
 import FontAwesomeExample from './FontAwesomeExample';
 import MaterialIconExample from './MaterialIconExample';
 import TextFieldExample from './TextFieldExample';
+import SelectFieldExample from './SelectFieldExample';
 import ColorExample from './ColorExample';
 
 
@@ -25,6 +26,7 @@ export default class Main extends Component {
         <FontAwesomeExample />
         <MaterialIconExample />
         <TextFieldExample />
+        <SelectFieldExample />
         <ColorExample />
       </div>
     );

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { 
-  FlatButton,
+  RaisedButton,
   Dialog,
 } from '../../src/index';
 import CodeExample from './CodeExample';
@@ -23,12 +23,12 @@ export default class DialogExample extends Component {
 
   render() {
     const actions = [
-      <FlatButton
+      <RaisedButton
         label="Cancel"
         primary={true}
         onTouchTap={this.handleClose}
       />,
-      <FlatButton
+      <RaisedButton
         label="Submit"
         primary={true}
         keyboardFocused={true}
@@ -40,7 +40,7 @@ export default class DialogExample extends Component {
       <div>
         <h2>Dialog</h2>
         <p>This component that wrapped <code>Dialog</code> of Material-UI. more information <a className="link-blue" target="_blank" href="http://www.material-ui.com/#/components/dialog">here <i className="fa fa-external-link" aria-hidden="true"></i></a></p>
-        <FlatButton label="Dialog" onTouchTap={this.handleOpen} />
+        <RaisedButton label="Dialog" onTouchTap={this.handleOpen} />
         <Dialog
           title="Dialog With Actions"
           actions={actions}
