@@ -9,6 +9,7 @@ import FlatButtonExample from './FlatButtonExample';
 import RaisedButtonExample from './RaisedButtonExample';
 import FontAwesomeExample from './FontAwesomeExample';
 import MaterialIconExample from './MaterialIconExample';
+import TextFieldExample from './TextFieldExample';
 import ColorExample from './ColorExample';
 
 
@@ -21,6 +22,7 @@ export default class Main extends Component {
         <DialogExample />
         <FontAwesomeExample />
         <MaterialIconExample />
+        <TextFieldExample />
         <ColorExample />
       </div>
     );
