@@ -3,21 +3,19 @@ import {red500, yellow500, blue500} from 'material-ui/styles/colors';
 import { 
   MaterialIcon,
 } from '../../src/index';
-
-const iconStyles = {
-  marginRight: 24,
-};
+import CodeExample from './CodeExample';
+const link = '<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">';
 
 export default class MaterialIconExample extends Component {
-  
   render() {
     return (
       <div>
         <h2>MaterialIcon</h2>
-        <MaterialIcon style={iconStyles}>home</MaterialIcon>
-        <MaterialIcon style={iconStyles} color={red500}>flight_takeoff</MaterialIcon>
-        <MaterialIcon style={iconStyles} color={yellow500}>cloud_download</MaterialIcon>
-        <MaterialIcon style={iconStyles} color={blue500}>videogame_asset</MaterialIcon>
+        <p>In the HTML, add the <code className="highlighter-rouge">{ link }</code> </p>
+        <MaterialIcon>home</MaterialIcon>
+        <CodeExample code="<MaterialIcon>home</MaterialIcon>" />
+        <MaterialIcon color='#E15757'>flight_takeoff</MaterialIcon>
+        <CodeExample code="<MaterialIcon color='#E15757'>flight_takeoff</MaterialIcon>" />
       </div>
     );
   }

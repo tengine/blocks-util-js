@@ -15,7 +15,6 @@ const styles = {
 export class MaterialIcon extends Component {
   render() {
     const { style } = this.props;
-    console.log(this.props.children);
     return (
       <MuiFontIcon
         { ...this.props }

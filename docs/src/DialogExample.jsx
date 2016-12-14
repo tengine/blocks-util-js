@@ -3,7 +3,7 @@ import {
   FlatButton,
   Dialog,
 } from '../../src/index';
-
+import CodeExample from './CodeExample';
 
 export default class DialogExample extends Component {
   constructor(props, context) {
