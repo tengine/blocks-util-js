@@ -6,4 +6,5 @@ export { MaterialIcon } from './MaterialIcon';
 export { MenuItem } from './MenuItem';
 export { SelectField } from './SelectField';
 export { TextField } from './TextField';
+export { Popover } from './Popover';
 

@@ -33,7 +33,7 @@ export const defaultTheme = getMuiTheme({
     borderColor: grey300,
     disabledColor: grey500,
     pickerHeaderColor: cyan500,
-    shadowColor: 'none',
+    // shadowColor: 'none',
   },
   /**
    * Components theme

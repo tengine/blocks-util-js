@@ -5,6 +5,7 @@ import {
 } from '../../src/index';
 
 import DialogExample from './DialogExample';
+import PopoverExample from './PopoverExample';
 import FlatButtonExample from './FlatButtonExample';
 import RaisedButtonExample from './RaisedButtonExample';
 import FontAwesomeExample from './FontAwesomeExample';
@@ -20,6 +21,7 @@ export default class Main extends Component {
         <FlatButtonExample />
         <RaisedButtonExample />
         <DialogExample />
+        <PopoverExample />
         <FontAwesomeExample />
         <MaterialIconExample />
         <TextFieldExample />

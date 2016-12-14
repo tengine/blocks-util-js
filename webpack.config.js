@@ -18,10 +18,14 @@ module.exports = {
         test: /\.jsx?$/,
         exclude: /node_modules/,
         loader: 'babel-loader'
+      },
+      {
+        test: /\.s?css$/,
+        loader: 'style!css!sass'
       }
     ]
   },
   resolve: {
     extensions: ['', '.js', '.jsx']
-  }  
+  }
 };

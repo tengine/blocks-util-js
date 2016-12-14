@@ -3,6 +3,9 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import { 
   defaultTheme,
 } from '../../src/index';
+// import '../../lib/index.css';
+import '../../style/index.scss';
+
 import Header from './Header';
 import Contents from './Contents';
 
