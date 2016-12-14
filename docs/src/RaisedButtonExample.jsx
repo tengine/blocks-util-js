@@ -13,6 +13,7 @@ export default class RaisedButtonExample extends Component {
     return (
       <div>
         <h2>RaisedButton</h2>
+        <p>This component that wrapped <code>RaisedButton</code> of Material-UI. more information <a className="link-blue" target="_blank" href="http://www.material-ui.com/#/components/raised-button">here <i className="fa fa-external-link" aria-hidden="true"></i></a></p>
         <RaisedButton label="Default" style={style} />
         <RaisedButton label="Primary" primary={true} style={style} />
         <RaisedButton label="Secondary" secondary={true} style={style} />

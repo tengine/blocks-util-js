@@ -10,6 +10,7 @@ export default class TextFieldExample extends Component {
     return (
       <div>
         <h2>TextField</h2>
+        <p>This component that wrapped <code>TextField</code> of Material-UI. more information <a className="link-blue" target="_blank" href="http://www.material-ui.com/#/components/text-field">here <i className="fa fa-external-link" aria-hidden="true"></i></a></p>
         <TextField hintText="Hint Text" />
         <CodeExample code="<TextField hintText='Hint Text' />" />
         <br />

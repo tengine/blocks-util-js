@@ -12,7 +12,7 @@ export default class CodeExample extends Component {
           style={github}>
           {this.props.code}
         </SyntaxHighlighter>
-      </div>
+        </div>
       </div>
     );
   }
