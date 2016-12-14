@@ -40,6 +40,7 @@
     "babel-preset-stage-2": "^6.18.0",
     "babel-preset-stage-3": "^6.17.0",
     "power-assert": "^1.4.2",
+    "react-syntax-highlighter": "^4.0.1",
     "webpack": "^1.14.0"
   }
 }
