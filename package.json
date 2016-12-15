@@ -9,7 +9,7 @@
   "scripts": {
     "build": "babel ./src -d ./lib",
     "build-css": "node-sass --include-path style style/index.scss lib/index.css",
-    "build:docs": "NODE_ENV=production webpack -p --config ./webpack.production.config.js",
+    "build:docs": "NODE_ENV=production webpack -p --config ./webpack.config.prod.js",
     "watch:docs": "NODE_ENV=development webpack --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
