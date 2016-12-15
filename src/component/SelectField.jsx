@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import MuiSelectField from 'material-ui/SelectField';
 import _ from 'lodash';
-import { grey300, grey700, lightGrey700 } from '../style/colors';
+import { grey300, grey700 } from 'material-ui/styles/colors';
 
 const styles = {
   root: {
@@ -33,7 +33,7 @@ const styles = {
     borderStyle: 'solid',
     borderRadius: 2,
     borderWidth: 1,
-    borderColor: `${lightGrey700}`,
+    borderColor: `${grey300}`,
   },
   hint: {
     lineHeight: 'initial',

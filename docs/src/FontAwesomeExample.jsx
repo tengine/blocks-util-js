@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import {red500, yellow500, blue500} from 'material-ui/styles/colors';
 import { 
   FontAwesome,
 } from '../../src/index';

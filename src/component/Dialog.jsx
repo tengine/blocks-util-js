@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import MuiDialog from 'material-ui/Dialog';
 import _ from 'lodash';
-import { cyan600, lightGrey400 } from '../style/colors';
+import { cyan600, grey300 } from 'material-ui/styles/colors';
 
 const styles = {
   root: {
@@ -9,7 +9,7 @@ const styles = {
   title: {
     color: `${cyan600}`,
     padding: '8px 14px 8px',
-    borderBottom: `1px solid ${lightGrey400}`,
+    borderBottom: `1px solid ${grey300}`,
   },
   body: {
     padding: '8px 14px 8px',

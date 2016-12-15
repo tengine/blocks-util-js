@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import MuiTextField from 'material-ui/TextField';
 import _ from 'lodash';
-import { grey300, grey700, lightGrey700 } from '../style/colors';
+import { grey300, grey400, grey700 } from 'material-ui/styles/colors';
 
 const styles = {
   root: {
@@ -22,7 +22,7 @@ const styles = {
     padding: 5,
     borderStyle: 'solid',
     borderRadius: 2,
-    borderColor: `${lightGrey700}`,
+    borderColor: `${grey300}`,
     borderWidth: 1,
   },
   textarea: {
@@ -32,7 +32,7 @@ const styles = {
     borderWidth: 1,
   },
   hint: {
-    color: `${grey300}`,
+    color: `${grey400}`,
     bottom: 'initial',
     padding: 5,
     margin: 2,
