@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import MuiPopover from 'material-ui/Popover';
 import classnames from 'classnames';
 import _ from 'lodash';
+import "../../style/triangle.scss";
 
 const styles = {
   root: {
