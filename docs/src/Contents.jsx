@@ -10,6 +10,7 @@ import FlatButtonExample from './FlatButtonExample';
 import RaisedButtonExample from './RaisedButtonExample';
 import FontAwesomeExample from './FontAwesomeExample';
 import MaterialIconExample from './MaterialIconExample';
+import IconExample from './IconExample';
 import TextFieldExample from './TextFieldExample';
 import SelectFieldExample from './SelectFieldExample';
 import ColorExample from './ColorExample';
@@ -25,6 +26,7 @@ export default class Main extends Component {
         <PopoverExample />
         <FontAwesomeExample />
         <MaterialIconExample />
+        <IconExample />
         <TextFieldExample />
         <SelectFieldExample />
         <ColorExample />
