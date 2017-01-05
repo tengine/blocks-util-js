@@ -65,11 +65,13 @@ export class TextField extends Component {
       hintStyle, 
       underlineStyle,
       underlineFocusStyle, 
-      underlineDisabledStyle, 
+      underlineDisabledStyle,
+      children,
+      ...props
     } = this.props;
     return (
       <MuiTextField
-        { ...this.props }
+        { ...props }
         style={ _.defaults(styles.root, style) }
         inputStyle={ _.defaults(styles.input, inputStyle) }
         textareaStyle={ _.defaults(styles.textarea, textareaStyle) }

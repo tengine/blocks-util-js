@@ -10,13 +10,14 @@ import { FontAwesome } from './FontAwesome';
  */
 export class Icon extends Component {
   render() {
+    const props = _.omit(this.props, ['children']);
     if (/^fa-/.test(this.props.children)) {
       return (
-        <FontAwesome { ...this.props }>{ this.props.children }</FontAwesome>
+        <FontAwesome { ...props }>{ this.props.children }</FontAwesome>
       );
     } else {
       return (
-        <MaterialIcon { ...this.props }>{ this.props.children }</MaterialIcon>
+        <MaterialIcon { ...props }>{ this.props.children }</MaterialIcon>
       );
     }
   }

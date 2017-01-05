@@ -15,10 +15,10 @@ const styles = {
  */
 export class FontAwesome extends Component {
   render() {
-    const { style } = this.props;
+    const { style, ...props } = this.props;
     return (
       <MuiFontIcon
-        { ...this.props }
+        { ...props }
         className={ classnames("fa", this.props.children) }
         style={ _.defaults(style, styles.root) }
       >
