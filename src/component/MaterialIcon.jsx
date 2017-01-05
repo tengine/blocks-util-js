@@ -14,14 +14,14 @@ const styles = {
  */
 export class MaterialIcon extends Component {
   render() {
-    const { style } = this.props;
+    const { style, children, ...props } = this.props;
     return (
       <MuiFontIcon
-        { ...this.props }
+        { ...props }
         className="material-icons"
         style={ _.defaults(style, styles.root) }
         >
-        { this.props.children }
+        { children }
       </MuiFontIcon>
     );
   }

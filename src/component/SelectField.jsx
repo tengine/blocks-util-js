@@ -6,13 +6,13 @@ import { grey300, grey700 } from 'material-ui/styles/colors';
 const styles = {
   root: {
     fontSize: 12,
-    height: 'inheri',
+    height: 'inherit',
   },
   input: {
     top: 0,
     position: 'relative',
     marginTop: 'initial',
-    height: 'initial',
+    height: `${24 + (5 * 2) + (1 * 2)}px`,
     padding: 5,
   },
   floatingLabel: {
@@ -39,7 +39,7 @@ const styles = {
     lineHeight: 'initial',
   },
   icon: {
-    top: 4,
+    top: 0,
   },
   error: {
     marginTop: 5,
@@ -70,11 +70,13 @@ export class SelectField extends Component {
       iconStyle, 
       underlineStyle,
       underlineFocusStyle, 
-      underlineDisabledStyle, 
+      underlineDisabledStyle,
+      children,
+      ...props
     } = this.props;
     return (
       <MuiSelectField
-        { ...this.props }
+        { ...props }
         style={ _.defaults(styles.root, style) }
         inputStyle={ _.defaults(styles.input, inputStyle) }
         labelStyle={ _.defaults(styles.label, labelStyle) }

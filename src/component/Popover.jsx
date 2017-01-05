@@ -13,13 +13,12 @@ const styles = {
 
 export class Popover extends Component {
   render() {
-    const { allow } = this.props; // custom porp
-    const { style, className } = this.props;
+    const { arrow, style, className, ...props } = this.props;
     return (
       <MuiPopover
-        style={ allow ? _.defaults(styles.root, style) : style }
-        className={ allow ? classnames(className, 'triangle', `triangle-${allow}`) : className }
-        { ...this.props }
+        style={ arrow ? _.defaults(styles.root, style) : style }
+        className={ arrow ? classnames(className, 'triangle', `triangle-${arrow}`) : className }
+        { ...props }
         />
     );
   }

@@ -26,17 +26,17 @@ const styles = {
 export class Dialog extends Component {
 
   render() {
-    const { style, titleStyle, bodyStyle, contentStyle, actionsContainerStyle } = this.props;
+    const { style, titleStyle, bodyStyle, contentStyle, actionsContainerStyle, children, ...props } = this.props;
     return (
       <MuiDialog
-        { ...this.props }
+        { ...props }
         style={ _.defaults(styles.root, style) }
         titleStyle={ _.defaults(styles.title, titleStyle) }
         bodyStyle={ _.defaults(styles.body, bodyStyle) }
         contentStyle={ _.defaults(styles.content, contentStyle) }
         actionsContainerStyle={ _.defaults(styles.actionsContainer, actionsContainerStyle) }
         >
-        { this.props.children }
+        { children }
       </MuiDialog>
     );
   }

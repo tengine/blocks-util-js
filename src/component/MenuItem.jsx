@@ -11,12 +11,13 @@ const styles = {
 export class MenuItem extends Component {
   render() {
     const { 
-      style, 
-      innerDivStyle,  
+      style,
+      innerDivStyle,
+      ...props
     } = this.props;
     return (
       <MuiMenuItem
-        { ...this.props }
+        { ...props }
         autoWidth={false}
         style={ _.defaults(styles.root, style) }
         innerDivStyle={ _.defaults(styles.innerDiv, innerDivStyle) }
