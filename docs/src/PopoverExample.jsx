@@ -9,14 +9,14 @@ import {
 
 import CodeExample from './CodeExample';
 
-const code = "<Popover open={true} allow='bottom-middle' anchorEl={this.state.anchorEl} anchorOrigin={this.state.anchorOrigin} targetOrigin={this.state.targetOrigin} onRequestClose={this.handleRequestClose} />";
+const code = "<Popover open={true} arrow='bottom-middle' anchorEl={this.state.anchorEl} anchorOrigin={this.state.anchorOrigin} targetOrigin={this.state.targetOrigin} onRequestClose={this.handleRequestClose} />";
 
 export default class PopoverExample extends Component {
   constructor(props, context) {
     super(props, context);
     this.state = {
       open: false,
-      allow: "",
+      arrow: "",
       anchorOrigin: {
         horizontal: 'middle',
         vertical: 'bottom',
@@ -64,7 +64,7 @@ export default class PopoverExample extends Component {
 
   handleChange = (event) => {
     this.setState({
-      allow: event.target.value
+      arrow: event.target.value
     });
   }
 
@@ -72,7 +72,7 @@ export default class PopoverExample extends Component {
     return (
       <div>
         <h2>Popover</h2>
-        <p>This component that wrapped <code>Popover</code> of Material-UI and added a <code className="text-red">allow</code> property. 
+        <p>This component that wrapped <code>Popover</code> of Material-UI and added a <code className="text-red">arrow</code> property. 
           more information <a className="link-blue" target="_blank" href="http://www.material-ui.com/#/components/popover">here <i className="fa fa-external-link" aria-hidden="true"></i> </a>.
           this code <a className="link-blue" target="_blank" href="https://github.com/tengine/blocks-util-js/blob/master/docs/src/PopoverExample.jsx">here <i className="fa fa-external-link" aria-hidden="true"></i></a>
         </p>
@@ -82,7 +82,7 @@ export default class PopoverExample extends Component {
         />
         <Popover
           open={this.state.open}
-          allow={this.state.allow}
+          arrow={this.state.arrow}
           anchorEl={this.state.anchorEl}
           anchorOrigin={this.state.anchorOrigin}
           targetOrigin={this.state.targetOrigin}
@@ -172,9 +172,9 @@ export default class PopoverExample extends Component {
           </div>
           <div className="one-third column">
             <div>
-              <p className="text-red">Allow (Custom Props)</p>
+              <p className="text-red">Arrow (Custom Props)</p>
               <select
-                value={this.state.allow}
+                value={this.state.arrow}
                 onChange={this.handleChange.bind(this)}>
                 <option value="">none</option>
                 <option value="bottom-left">bottom-left</option>
