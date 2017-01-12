@@ -16,7 +16,7 @@ export class Popover extends Component {
     const { arrow, style, className, ...props } = this.props;
     return (
       <MuiPopover
-        style={ arrow ? _.defaults(styles.root, style) : style }
+        style={ arrow ? _.defaults(style, styles.root) : style }
         className={ arrow ? classnames(className, 'triangle', `triangle-${arrow}`) : className }
         { ...props }
         />

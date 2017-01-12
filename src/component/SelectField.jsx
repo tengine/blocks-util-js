@@ -77,18 +77,18 @@ export class SelectField extends Component {
     return (
       <MuiSelectField
         { ...props }
-        style={ _.defaults(styles.root, style) }
-        inputStyle={ _.defaults(styles.input, inputStyle) }
-        labelStyle={ _.defaults(styles.label, labelStyle) }
-        menuStyle={ _.defaults(styles.menu, menuStyle) }
-        iconStyle={ _.defaults(styles.icon, iconStyle) }
-        hintStyle={ _.defaults(styles.hint, hintStyle) }
-        errorStyle={ _.defaults(styles.error, errorStyle) }
-        floatingLabelStyle={ _.defaults(styles.floatingLabel, floatingLabelStyle) }
-        floatingLabelFocusStyle={ _.defaults(styles.floatingLabelFocus, floatingLabelFocusStyle) }
-        underlineStyle={ _.defaults(styles.underline, underlineStyle) }
-        underlineFocusStyle={ _.defaults(styles.underlineFocus, underlineFocusStyle) }
-        underlineDisabledStyle={ _.defaults(styles.underlineDisabled, underlineDisabledStyle) }
+         style={ _.defaults(style, styles.root) }
+         inputStyle={ _.defaults(inputStyle, styles.input) }
+         labelStyle={ _.defaults(labelStyle, styles.label) }
+         menuStyle={ _.defaults(menuStyle, styles.menu) }
+         iconStyle={ _.defaults(iconStyle, styles.icon) }
+         hintStyle={ _.defaults(hintStyle, styles.hint) }
+         errorStyle={ _.defaults(errorStyle, styles.error) }
+         floatingLabelStyle={ _.defaults(floatingLabelStyle, styles.floatingLabel) }
+         floatingLabelFocusStyle={ _.defaults(floatingLabelFocusStyle, styles.floatingLabelFocus) }
+         underlineStyle={ _.defaults(underlineStyle, styles.underline) }
+         underlineFocusStyle={ _.defaults(underlineFocusStyle, styles.underlineFocus) }
+         underlineDisabledStyle={ _.defaults(underlineDisabledStyle, styles.underlineDisabled) }
         >
         { this.props.children }
       </MuiSelectField>

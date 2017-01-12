@@ -19,8 +19,8 @@ export class MenuItem extends Component {
       <MuiMenuItem
         { ...props }
         autoWidth={false}
-        style={ _.defaults(styles.root, style) }
-        innerDivStyle={ _.defaults(styles.innerDiv, innerDivStyle) }
+         style={ _.defaults(style, styles.root) }
+         innerDivStyle={ _.defaults(innerDivStyle, styles.innerDiv) }
         />
     );
   }

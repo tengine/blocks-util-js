@@ -30,11 +30,11 @@ export class Dialog extends Component {
     return (
       <MuiDialog
         { ...props }
-        style={ _.defaults(styles.root, style) }
-        titleStyle={ _.defaults(styles.title, titleStyle) }
-        bodyStyle={ _.defaults(styles.body, bodyStyle) }
-        contentStyle={ _.defaults(styles.content, contentStyle) }
-        actionsContainerStyle={ _.defaults(styles.actionsContainer, actionsContainerStyle) }
+         style={ _.defaults(style, styles.root) }
+         titleStyle={ _.defaults(titleStyle, styles.title) }
+         bodyStyle={ _.defaults(bodyStyle, styles.body) }
+         contentStyle={ _.defaults(contentStyle, styles.content) }
+         actionsContainerStyle={ _.defaults(actionsContainerStyle, styles.actionsContainer) }
         >
         { children }
       </MuiDialog>

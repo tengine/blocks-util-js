@@ -72,16 +72,16 @@ export class TextField extends Component {
     return (
       <MuiTextField
         { ...props }
-        style={ _.defaults(styles.root, style) }
-        inputStyle={ _.defaults(styles.input, inputStyle) }
-        textareaStyle={ _.defaults(styles.textarea, textareaStyle) }
-        hintStyle={ _.defaults(styles.hint, hintStyle) }
-        errorStyle={ _.defaults(styles.error, errorStyle) }
-        floatingLabelStyle={ _.defaults(styles.floatingLabel, floatingLabelStyle) }
-        floatingLabelFocusStyle={ _.defaults(styles.floatingLabelFocus, floatingLabelFocusStyle) }
-        underlineStyle={ _.defaults(styles.underline, underlineStyle) }
-        underlineFocusStyle={ _.defaults(styles.underlineFocus, underlineFocusStyle) }
-        underlineDisabledStyle={ _.defaults(styles.underlineDisabled, underlineDisabledStyle) }
+         style={ _.defaults(style, styles.root) }
+         inputStyle={ _.defaults(inputStyle, styles.input) }
+         textareaStyle={ _.defaults(textareaStyle, styles.textarea) }
+         hintStyle={ _.defaults(hintStyle, styles.hint) }
+         errorStyle={ _.defaults(errorStyle, styles.error) }
+         floatingLabelStyle={ _.defaults(floatingLabelStyle, styles.floatingLabel) }
+         floatingLabelFocusStyle={ _.defaults(floatingLabelFocusStyle, styles.floatingLabelFocus) }
+         underlineStyle={ _.defaults(underlineStyle, styles.underline) }
+         underlineFocusStyle={ _.defaults(underlineFocusStyle, styles.underlineFocus) }
+         underlineDisabledStyle={ _.defaults(underlineDisabledStyle, styles.underlineDisabled) }
         />
     );
   }
