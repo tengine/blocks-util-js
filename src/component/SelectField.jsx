@@ -24,7 +24,6 @@ const styles = {
   },
   lebel: {
     lineHeight: 'initial',
-    color: `red`,
     bottom: 10,
   },
   menu: {
