@@ -28,19 +28,19 @@ $color-outline: #dfdfdf;
 .triangle-bottom-left {
   margin-top: $margin;
   &:before {
-    @include triangle('top', $adjust-outline, 80%, 'initial', $color-outline);
+    @include triangle('top', $adjust-outline, calc(80% - 8px), 'initial', $color-outline);
   }
   &:after {
-    @include triangle('top', $adjust, 80%, 'initial', $color);
+    @include triangle('top', $adjust, calc(80% - 8px), 'initial', $color);
   }
 }
 .triangle-bottom-middle {
   margin-top: $margin;
   &:before {
-    @include triangle('top', $adjust-outline, 50%, 'initial', $color-outline);
+    @include triangle('top', $adjust-outline, calc(50% - 8px), 'initial', $color-outline);
   }
   &:after {
-    @include triangle('top', $adjust, 50%, 'initial', $color);
+    @include triangle('top', $adjust, calc(50% - 8px), 'initial', $color);
   }
 }
 .triangle-bottom-right {
@@ -65,10 +65,10 @@ $color-outline: #dfdfdf;
 .triangle-right-middle {
   margin-left: $margin;
   &:before {
-    @include triangle('left', 50%, 'initial', $adjust-outline, $color-outline);
+    @include triangle('left', calc(50% - 8px), 'initial', $adjust-outline, $color-outline);
   }
   &:after {
-    @include triangle('left', 50%, 'initial', $adjust, $color);
+    @include triangle('left', calc(50% - 8px), 'initial', $adjust, $color);
   }
 }
 .triangle-right-bottom {
@@ -93,18 +93,18 @@ $color-outline: #dfdfdf;
 .triangle-left-middle {
   margin-left: $margin;
   &:before {
-    @include triangle('right', 50%, $adjust-outline, 'initial', $color-outline);
+    @include triangle('right', calc(50% - 8px), $adjust-outline, 'initial', $color-outline);
   }
   &:after {
-    @include triangle('right', 50%, $adjust, 'initial', $color);
+    @include triangle('right', calc(50% - 8px), $adjust, 'initial', $color);
   }
 }
 .triangle-left-bottom {
   margin-left: $margin;
   &:before {
-    @include triangle('right', 80%, $adjust-outline, 'initial', $color-outline);
+    @include triangle('right', calc(80% - 8px), $adjust-outline, 'initial', $color-outline);
   }
   &:after {
-    @include triangle('right', 80%, $adjust, 'initial', $color);
+    @include triangle('right', calc(80% - 8px), $adjust, 'initial', $color);
   }
 }
