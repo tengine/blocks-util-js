@@ -10,10 +10,10 @@ module.exports = {
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV)
     }),
-    new webpack.optimize.OccurenceOrderPlugin()
+    new webpack.optimize.OccurrenceOrderPlugin()
   ],
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.jsx?$/,
         exclude: /node_modules/,
@@ -21,11 +21,14 @@ module.exports = {
       },
       {
         test: /\.s?css$/,
-        loader: 'style!css!sass'
+        loader: "style-loader!css-loader!sass-loader"
       }
     ]
   },
+  performance: {
+    hints: false
+  },
   resolve: {
-    extensions: ['', '.js', '.jsx']
+    extensions: [".js", ".json", ".jsx", ".css"],
   }
 };
