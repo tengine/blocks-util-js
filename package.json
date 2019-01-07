@@ -41,7 +41,6 @@
     "css-loader": "^2.0.1",
     "node-sass": "^4.11.0",
     "power-assert": "^1.4.2",
-    "react-syntax-highlighter": "^10.1.2",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
     "webpack": "^4.28.1",
