@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import MuiPopover from 'material-ui/Popover';
+import MuiPopover from '@material-ui/core/Popover';
 import classnames from 'classnames';
 import _ from 'lodash';
 import "../style/index.scss";

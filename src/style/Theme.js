@@ -1,15 +1,13 @@
 import _ from 'lodash';
-import getMuiTheme from 'material-ui/styles/getMuiTheme';
+import { createMuiTheme } from '@material-ui/core/styles';
 import {
-  white, 
-  red400,
-  cyan600,
-  grey300,
-  grey500,
-  grey600,
-  } from 'material-ui/styles/colors';
+  common, 
+  red,
+  cyan,
+  grey,
+  } from '@material-ui/core/colors';
 
-export const defaultTheme = getMuiTheme({
+export const defaultTheme = createMuiTheme({
   /**
    * Base theme
    * @see {@link https://github.com/callemall/material-ui/blob/master/src/styles/baseThemes/lightBaseTheme.js}
@@ -19,19 +17,19 @@ export const defaultTheme = getMuiTheme({
     desktopToolbarHeight: 30,
   },
   palette: {
-    primary1Color: cyan600,
-    primary2Color: cyan600,
-    primary3Color: grey500,
-    accent1Color: red400,
-    accent2Color: grey300,
-    accent3Color: grey600,
-    textColor: grey600,
-    secondaryTextColor: grey600,
-    alternateTextColor: white,
-    canvasColor: white,
-    borderColor: grey500,
-    disabledColor: grey600,
-    pickerHeaderColor: cyan600,
+    primary1Color: cyan[600],
+    primary2Color: cyan[600],
+    primary3Color: grey[500],
+    accent1Color: red[400],
+    accent2Color: grey[300],
+    accent3Color: grey[600],
+    textColor: grey[600],
+    secondaryTextColor: grey[600],
+    alternateTextColor: common.white,
+    canvasColor: common.white,
+    borderColor: grey[500],
+    disabledColor: grey[600],
+    pickerHeaderColor: cyan[600],
     // shadowColor: 'none',
   },
   /**
@@ -44,10 +42,10 @@ export const defaultTheme = getMuiTheme({
   dialog: {
     titleFontSize: 14,
     bodyFontSize: 12,
-    bodyColor: grey600,
+    bodyColor: grey[600],
   },
   textField: {
-    errorColor: red400,
+    errorColor: red[400],
     backgroundColor: 'transparent',
   },
   overlay: {
