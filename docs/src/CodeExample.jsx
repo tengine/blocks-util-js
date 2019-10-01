@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import SyntaxHighlighter from 'react-syntax-highlighter';
-import { github } from 'react-syntax-highlighter/dist/styles';
+import { github } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 
 export default class CodeExample extends Component {
   render() {

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import { ThemeProvider as MuiThemeProvider } from '@material-ui/styles';
 import { 
   defaultTheme,
 } from '../../src/index';
@@ -19,18 +19,20 @@ import ColorExample from './ColorExample';
 export default class Main extends Component {
   render() {
     return (
-      <div className="container pt-3 pb-3 markdown-body">
-        <FlatButtonExample />
-        <RaisedButtonExample />
-        <DialogExample />
-        <PopoverExample />
-        <FontAwesomeExample />
-        <MaterialIconExample />
-        <IconExample />
-        <TextFieldExample />
-        <SelectFieldExample />
-        <ColorExample />
-      </div>
+      <MuiThemeProvider theme={defaultTheme}>
+        <div className="container pt-3 pb-3 markdown-body">
+          <FlatButtonExample />
+          <RaisedButtonExample />
+          <DialogExample />
+          <PopoverExample />
+          <FontAwesomeExample />
+          <MaterialIconExample />
+          <IconExample />
+          <TextFieldExample />
+          <SelectFieldExample />
+          <ColorExample />
+        </div>
+      </MuiThemeProvider>
     );
   }
 }
