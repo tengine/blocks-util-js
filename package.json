@@ -1,6 +1,6 @@
 {
   "name": "blocks-util-js",
-  "version": "0.1.0",
+  "version": "2.0.0",
   "description": "",
   "main": "lib/index.js",
   "files": [
@@ -24,28 +24,27 @@
   },
   "homepage": "https://github.com/tengine/blocks-util-js#readme",
   "dependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@material-ui/core": "^4.4.3",
+    "@material-ui/styles": "^4.4.3",
     "classnames": "^2.2.6",
     "lodash": "^4.17.15",
-    "material-ui": "0.20.2",
     "react": "16.10.1",
     "react-dom": "16.10.1",
     "react-tap-event-plugin": "3.0.3"
   },
   "devDependencies": {
-    "babel-cli": "6.26.0",
-    "babel-core": "^6.26.3",
-    "babel-loader": "8.0.6",
-    "babel-plugin-espower": "^3.0.1",
-    "babel-preset-es2015": "^6.24.1",
-    "babel-preset-react": "^6.24.1",
-    "babel-preset-stage-2": "6.24.1",
-    "babel-preset-stage-3": "^6.24.1",
+    "@babel/core": "^7.6.2",
+    "@babel/preset-env": "^7.6.2",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.6",
     "css-loader": "3.2.0",
     "node-sass": "4.12.0",
     "power-assert": "^1.6.1",
     "react-syntax-highlighter": "11.0.2",
     "sass-loader": "8.0.0",
     "style-loader": "1.0.0",
-    "webpack": "4.41.0"
+    "webpack": "4.41.0",
+    "webpack-cli": "^3.3.9"
   }
 }
