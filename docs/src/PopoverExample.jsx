@@ -69,6 +69,7 @@ export default class PopoverExample extends Component {
   }
 
   render() {
+    console.log(this.props)
     return (
       <div>
         <h2>Popover</h2>
