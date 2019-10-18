@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import MuiSelectField from 'material-ui/SelectField';
+import MuiSelectField from '@material-ui/core/Select';
 import _ from 'lodash';
-import { grey300, grey700 } from 'material-ui/styles/colors';
+import { grey } from '@material-ui/core/colors';
 
 const styles = {
   root: {
@@ -20,7 +20,7 @@ const styles = {
     top: 'initial',
   },
   floatingLabelFocus: {
-    color: `${grey700}`,
+    color: `${grey[700]}`,
   },
   lebel: {
     lineHeight: 'initial',
@@ -33,7 +33,7 @@ const styles = {
     borderStyle: 'solid',
     borderRadius: 2,
     borderWidth: 1,
-    borderColor: `${grey300}`,
+    borderColor: `${grey[300]}`,
   },
   hint: {
     lineHeight: 'initial',

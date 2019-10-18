@@ -1,6 +1,6 @@
 {
   "name": "blocks-util-js",
-  "version": "0.1.0",
+  "version": "2.0.0",
   "description": "",
   "main": "lib/index.js",
   "files": [
@@ -8,9 +8,9 @@
   ],
   "scripts": {
     "build": "babel ./src -d ./lib",
-    "build-css": "node-sass --include-path style style/index.scss lib/index.css",
-    "build:docs": "NODE_ENV=production webpack --mode production -p --config ./webpack.config.prod.js",
-    "watch:docs": "NODE_ENV=development webpack --mode development --watch",
+    "build-css": "node-sass --include-path style src/style/index.scss lib/style/index.scss; node-sass --include-path style src/style/index.scss lib/style/index.css",
+    "build:docs": "webpack -p --mode=production",
+    "watch:docs": "webpack -p --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -24,26 +24,28 @@
   },
   "homepage": "https://github.com/tengine/blocks-util-js#readme",
   "dependencies": {
-    "@babel/cli": "^7.2.3",
-    "classnames": "^2.2.5",
-    "lodash": "^4.17.2",
-    "material-ui": "^0.20.2",
-    "react": "^16.3.2",
-    "react-dom": "16.3.3"
+    "@babel/cli": "^7.6.2",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@material-ui/core": "^4.4.3",
+    "@material-ui/styles": "^4.4.3",
+    "classnames": "^2.2.6",
+    "lodash": "^4.17.15",
+    "react": "16.10.1",
+    "react-dom": "16.10.1",
+    "react-tap-event-plugin": "3.0.3"
   },
   "devDependencies": {
-    "@babel/core": "^7.2.2",
-    "@babel/plugin-proposal-class-properties": "^7.2.3",
-    "@babel/preset-env": "^7.2.3",
+    "@babel/core": "^7.6.2",
+    "@babel/preset-env": "^7.6.2",
     "@babel/preset-react": "^7.0.0",
-    "babel-loader": "^8.0.4",
-    "babel-plugin-espower": "^2.3.1",
-    "css-loader": "^2.0.1",
-    "node-sass": "^4.11.0",
-    "power-assert": "^1.4.2",
-    "sass-loader": "^7.1.0",
-    "style-loader": "^0.23.1",
-    "webpack": "^4.28.1",
-    "webpack-cli": "^3.1.2"
+    "babel-loader": "^8.0.6",
+    "css-loader": "3.2.0",
+    "node-sass": "4.12.0",
+    "power-assert": "^1.6.1",
+    "react-syntax-highlighter": "11.0.2",
+    "sass-loader": "8.0.0",
+    "style-loader": "1.0.0",
+    "webpack": "4.41.0",
+    "webpack-cli": "^3.3.9"
   }
 }

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import MuiFontIcon from 'material-ui/FontIcon';
+import MuiFontIcon from '@material-ui/core/Icon';
 import _ from 'lodash';
 
 const styles = {
