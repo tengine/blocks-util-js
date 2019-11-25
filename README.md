@@ -22,6 +22,7 @@ yarn add https://github.com/tengine/blocks-util-js#<commit-ish>
 
 * [react](https://www.npmjs.com/package/react)
 * [react-dom](https://www.npmjs.com/package/react-dom)
+* [react-tap-event-plugin](https://www.npmjs.com/package/react-tap-event-plugin)
 
 ## Usage
 
@@ -33,6 +34,11 @@ import {
   defaultTheme,
   FlatButton
 } from 'blocks-util-js';
+
+// Needed for onTouchTap
+// http://stackoverflow.com/a/34015469/988941
+import injectTapEventPlugin from 'react-tap-event-plugin';
+injectTapEventPlugin();
 
 class Main extends React.Component {
   render() {

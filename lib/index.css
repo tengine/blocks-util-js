@@ -7,7 +7,7 @@
     content: "";
     position: absolute;
     top: -17px;
-    right: calc(80% - 8px);
+    right: 80%;
     left: "initial";
     border: 8px solid transparent;
     border-bottom: 8px solid #dfdfdf; }
@@ -15,7 +15,7 @@
     content: "";
     position: absolute;
     top: -16px;
-    right: calc(80% - 8px);
+    right: 80%;
     left: "initial";
     border: 8px solid transparent;
     border-bottom: 8px solid #fff; }
@@ -26,7 +26,7 @@
     content: "";
     position: absolute;
     top: -17px;
-    right: calc(50% - 8px);
+    right: 50%;
     left: "initial";
     border: 8px solid transparent;
     border-bottom: 8px solid #dfdfdf; }
@@ -34,7 +34,7 @@
     content: "";
     position: absolute;
     top: -16px;
-    right: calc(50% - 8px);
+    right: 50%;
     left: "initial";
     border: 8px solid transparent;
     border-bottom: 8px solid #fff; }
@@ -82,7 +82,7 @@
   .triangle-right-middle:before {
     content: "";
     position: absolute;
-    top: calc(50% - 8px);
+    top: 50%;
     right: "initial";
     left: -17px;
     border: 8px solid transparent;
@@ -90,7 +90,7 @@
   .triangle-right-middle:after {
     content: "";
     position: absolute;
-    top: calc(50% - 8px);
+    top: 50%;
     right: "initial";
     left: -16px;
     border: 8px solid transparent;
@@ -139,7 +139,7 @@
   .triangle-left-middle:before {
     content: "";
     position: absolute;
-    top: calc(50% - 8px);
+    top: 50%;
     right: -17px;
     left: "initial";
     border: 8px solid transparent;
@@ -147,7 +147,7 @@
   .triangle-left-middle:after {
     content: "";
     position: absolute;
-    top: calc(50% - 8px);
+    top: 50%;
     right: -16px;
     left: "initial";
     border: 8px solid transparent;
@@ -158,7 +158,7 @@
   .triangle-left-bottom:before {
     content: "";
     position: absolute;
-    top: calc(80% - 8px);
+    top: 80%;
     right: -17px;
     left: "initial";
     border: 8px solid transparent;
@@ -166,7 +166,7 @@
   .triangle-left-bottom:after {
     content: "";
     position: absolute;
-    top: calc(80% - 8px);
+    top: 80%;
     right: -16px;
     left: "initial";
     border: 8px solid transparent;
