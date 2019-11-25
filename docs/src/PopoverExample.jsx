@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import SelectField from '@material-ui/core/Select';
-import RadioButton from '@material-ui/core/Button';
-import Menu from '@material-ui/core/MenuList';
-import MenuItem from '@material-ui/core/MenuItem';
+import SelectField from 'material-ui/SelectField';
+import RadioButton from 'material-ui/RadioButton';
+import {Menu, MenuItem} from 'material-ui/Menu';
 import { 
   RaisedButton,
   Popover,

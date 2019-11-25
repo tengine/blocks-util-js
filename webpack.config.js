@@ -2,7 +2,6 @@ var webpack = require('webpack');
 var path = require('path');
 
 module.exports = {
-  mode: 'development',
   entry: './docs/src/index.js',
   output: {
     path: path.resolve(__dirname, 'docs'),
@@ -13,25 +12,18 @@ module.exports = {
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV)
     }),
+    new webpack.optimize.OccurrenceOrderPlugin()
   ],
   module: {
     rules: [
       {
         test: /\.jsx?$/,
         exclude: /node_modules/,
-        use: [
-          {
-            loader: 'babel-loader'
-          }
-        ]
+        loader: 'babel-loader'
       },
       {
         test: /\.s?css$/,
-        use: [
-          'style-loader',
-          'css-loader',
-          'sass-loader'
-        ]
+        loader: "style-loader!css-loader!sass-loader"
       }
     ]
   },

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import MuiMenuItem from '@material-ui/core/MenuItem';
+import MuiMenuItem from 'material-ui/MenuItem';
 import _ from 'lodash';
 
 const styles = {
