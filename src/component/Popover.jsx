@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import MuiPopover from '@material-ui/core/Popover';
+import MuiPopover from 'material-ui/Popover';
 import classnames from 'classnames';
 import _ from 'lodash';
-import "../style/index.scss";
+import "../../style/triangle.scss";
 
 const styles = {
   root: {

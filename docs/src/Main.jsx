@@ -1,4 +1,9 @@
 import React, { Component } from 'react';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import { 
+  defaultTheme,
+} from '../../src/index';
+
 import Header from './Header';
 import Contents from './Contents';
 
@@ -6,10 +11,12 @@ import Contents from './Contents';
 export default class Main extends Component {
   render() {
     return (
-      <div>
-        <Header />
-        <Contents />
-      </div>
+      <MuiThemeProvider muiTheme={defaultTheme}>
+        <div>
+          <Header />
+          <Contents />
+        </div>
+      </MuiThemeProvider>
     );
   }
 }
