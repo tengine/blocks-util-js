@@ -4,19 +4,17 @@
   "description": "",
   "main": "dist/index.cjs.js",
   "module": "dist/index.es.js",
-  "browser": {
-    "./dist/index.js": "./dist/index.cjs.js",
-    "./dist/index.esm.js": "./dist/index.esm.js"
-  },
+  "browser": "dist/index.js",
+  "style": "dist/main.css",
   "sideEffects": [
     "*.css"
   ],
   "files": [
-    "dist",
-    "scss"
+    "dist"
   ],
   "scripts": {
     "build": "npm run clean && cross-env NODE_ENV=production rollup -c && npm run style",
+    "start": "rollup -c -w",
     "clean": "rimraf dist/*",
     "sass": "node-sass scss/main.scss dist/main.css",
     "style": "npm run sass && cssnano dist/main.css dist/main.min.css --no-zindex --no-reduceIdents",

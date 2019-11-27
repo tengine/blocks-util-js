@@ -9,7 +9,12 @@ export default {
   input: 'src/index.js',
   output: [
     { file: pkg.main, format: 'cjs' },
-    { file: pkg.module, format: "es" }
+    { file: pkg.module, format: "es" },
+    {
+      file: pkg.browser,
+      format: 'umd',
+      name: 'BlocksUtilJs',
+    },
   ],
   external: [
     ...Object.keys(pkg.dependencies || {}),
