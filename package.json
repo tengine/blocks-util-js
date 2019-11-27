@@ -2,22 +2,17 @@
   "name": "blocks-util-js",
   "version": "0.1.0",
   "description": "",
-  "main": "dist/index.js",
-  "module": "dist/index.es.js",
-  "browser": "dist/index.js",
-  "style": "dist/main.css",
-  "sideEffects": [
-    "*.css"
-  ],
+  "main": "lib/index.js",
+  "style": "lib/index.css",
   "files": [
-    "dist"
+    "lib"
   ],
   "scripts": {
-    "build": "npm run clean && cross-env NODE_ENV=production rollup -c && npm run style",
+    "build": "npm run clean && npm run style && babel ./src -d ./lib",
     "start": "rollup -c -w",
-    "clean": "rimraf dist/*",
-    "sass": "node-sass scss/main.scss dist/main.css",
-    "style": "npm run sass && cssnano dist/main.css dist/main.min.css --no-zindex --no-reduceIdents",
+    "clean": "rimraf lib/*",
+    "sass": "node-sass scss/index.scss lib/index.css",
+    "style": "npm run sass && cssnano lib/index.css lib/index.min.css --no-zindex --no-reduceIdents",
     "storybook": "npm run sass && start-storybook -p 8008",
     "deploy-storybook": "storybook-to-ghpages"
   },
@@ -39,24 +34,18 @@
     "react-dom": "16.3.3"
   },
   "devDependencies": {
+    "@babel/cli": "^7.7.4",
     "@babel/core": "^7.2.2",
-    "@babel/plugin-proposal-class-properties": "^7.7.4",
+    "@babel/plugin-proposal-class-properties": "^7.2.3",
     "@babel/preset-env": "^7.2.3",
     "@babel/preset-react": "^7.0.0",
     "@storybook/addon-actions": "^5.2.6",
     "@storybook/react": "^5.2.6",
     "@storybook/storybook-deployer": "^2.8.1",
     "babel-loader": "^8.0.6",
-    "cross-env": "^6.0.3",
     "cssnano": "^4.1.10",
     "cssnano-cli": "^1.0.5",
-    "rimraf": "^3.0.0",
-    "rollup": "^1.27.5",
-    "rollup-plugin-babel": "^4.3.3",
-    "rollup-plugin-commonjs": "^10.1.0",
-    "rollup-plugin-filesize": "^6.2.1",
-    "rollup-plugin-node-resolve": "^5.2.0",
-    "rollup-plugin-replace": "^2.2.0",
-    "rollup-plugin-scss": "^1.0.2"
+    "node-sass": "^4.13.0",
+    "rimraf": "^3.0.0"
   }
 }
