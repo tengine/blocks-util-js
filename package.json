@@ -2,16 +2,20 @@
   "name": "blocks-util-js",
   "version": "0.1.0",
   "description": "",
-  "main": "lib/index.js",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.es.js",
+  "sideEffects": [
+    "*.css"
+  ],
   "files": [
-    "lib"
+    "dist",
+    "scss"
   ],
   "scripts": {
-    "build": "babel ./src -d ./lib",
-    "build-css": "node-sass --include-path style style/index.scss lib/index.css",
-    "build:docs": "NODE_ENV=production webpack --mode production -p --config ./webpack.config.prod.js",
-    "watch:docs": "NODE_ENV=development webpack --mode development --watch",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npm run clean && cross-env NODE_ENV=production rollup -c && npm run style",
+    "clean": "rimraf dist/*",
+    "sass": "node-sass scss/main.scss dist/main.css",
+    "style": "npm run sass && cssnano dist/main.css dist/main.min.css --no-zindex --no-reduceIdents"
   },
   "repository": {
     "type": "git",
@@ -24,7 +28,6 @@
   },
   "homepage": "https://github.com/tengine/blocks-util-js#readme",
   "dependencies": {
-    "@babel/cli": "^7.2.3",
     "classnames": "^2.2.5",
     "lodash": "^4.17.15",
     "material-ui": "^0.20.2",
@@ -33,14 +36,18 @@
   },
   "devDependencies": {
     "@babel/core": "^7.2.2",
-    "@babel/plugin-proposal-class-properties": "^7.2.3",
     "@babel/preset-env": "^7.2.3",
     "@babel/preset-react": "^7.0.0",
-    "babel-loader": "^8.0.4",
-    "css-loader": "^2.0.1",
-    "sass-loader": "^7.1.0",
-    "style-loader": "^0.23.1",
-    "webpack": "^4.28.1",
-    "webpack-cli": "^3.1.2"
+    "babel-loader": "^8.0.6",
+    "cross-env": "^6.0.3",
+    "cssnano": "^4.1.10",
+    "cssnano-cli": "^1.0.5",
+    "rimraf": "^3.0.0",
+    "rollup": "^1.27.5",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-filesize": "^6.2.1",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-scss": "^1.0.2"
   }
 }
