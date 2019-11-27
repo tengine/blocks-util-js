@@ -22,7 +22,6 @@ export default {
   ],
   plugins: [
     resolve({
-      mainFields: ["module"],
       extensions: [".js", ".jsx"]
     }),
     babel({
