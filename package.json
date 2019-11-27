@@ -4,6 +4,10 @@
   "description": "",
   "main": "dist/index.cjs.js",
   "module": "dist/index.es.js",
+  "browser": {
+    "./dist/index.js": "./dist/index.cjs.js",
+    "./dist/index.esm.js": "./dist/index.esm.js"
+  },
   "sideEffects": [
     "*.css"
   ],
