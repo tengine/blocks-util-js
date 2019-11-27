@@ -15,7 +15,8 @@
     "build": "npm run clean && cross-env NODE_ENV=production rollup -c && npm run style",
     "clean": "rimraf dist/*",
     "sass": "node-sass scss/main.scss dist/main.css",
-    "style": "npm run sass && cssnano dist/main.css dist/main.min.css --no-zindex --no-reduceIdents"
+    "style": "npm run sass && cssnano dist/main.css dist/main.min.css --no-zindex --no-reduceIdents",
+    "storybook": "npm run sass && start-storybook -p 8008"
   },
   "repository": {
     "type": "git",
@@ -38,6 +39,8 @@
     "@babel/core": "^7.2.2",
     "@babel/preset-env": "^7.2.3",
     "@babel/preset-react": "^7.0.0",
+    "@storybook/addon-actions": "^5.2.6",
+    "@storybook/react": "^5.2.6",
     "babel-loader": "^8.0.6",
     "cross-env": "^6.0.3",
     "cssnano": "^4.1.10",
