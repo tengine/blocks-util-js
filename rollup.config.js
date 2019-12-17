@@ -24,12 +24,12 @@ export default {
     resolve({
       extensions: [".js", ".jsx"]
     }),
+    replace({
+      "process.env.NODE_ENV": JSON.stringify("production")
+    }),
     babel({
       exclude: "node_modules/**",
     }),
     commonjs(),
-    replace({
-      "process.env.NODE_ENV": JSON.stringify("production")
-    }),
   ]
 };
