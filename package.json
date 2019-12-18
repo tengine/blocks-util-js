@@ -21,13 +21,17 @@
     "url": "https://github.com/tengine/blocks-util-js/issues"
   },
   "homepage": "https://github.com/tengine/blocks-util-js#readme",
+  "peerDependencies": {
+    "material-ui": "0.16.x",
+    "react": "15.6.x",
+    "react-dom": "^15.6.x"
+  },
   "dependencies": {
     "classnames": "^2.2.5",
     "lodash": "^4.17.2",
     "material-ui": "^0.16.7",
     "react": "^15.6.2",
-    "react-dom": "^15.6.2",
-    "react-tap-event-plugin": "^2.0.1"
+    "react-dom": "^15.6.2"
   },
   "devDependencies": {
     "@babel/cli": "^7.2.3",
