@@ -1,6 +1,6 @@
 import { configure } from '@storybook/react';
 
-import '../lib/style/index.css';
+import '../lib/index.css';
 
 function requireAll(requireContext) {
   return requireContext.keys().map(requireContext);

@@ -1,4 +1,4 @@
-import { defaultTheme } from './Theme.js';
+import { defaultTheme } from './Theme';
 import { Dialog } from './Dialog';
 import { FlatButton } from './FlatButton';
 import { FontAwesome } from './FontAwesome';
