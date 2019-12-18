@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 import MuiMenuItem from 'material-ui/MenuItem';
 import _ from 'lodash';
 

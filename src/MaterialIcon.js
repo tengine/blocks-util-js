@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 import MuiFontIcon from 'material-ui/FontIcon';
 import _ from 'lodash';
 

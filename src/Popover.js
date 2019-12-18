@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 import MuiPopover from 'material-ui/Popover';
 import classnames from 'classnames';
 import _ from 'lodash';

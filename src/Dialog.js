@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 import MuiDialog from 'material-ui/Dialog';
 import _ from 'lodash';
 import { cyan600, grey300 } from 'material-ui/styles/colors';
