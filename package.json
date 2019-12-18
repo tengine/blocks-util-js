@@ -8,7 +8,7 @@
   ],
   "scripts": {
     "build": "babel ./src -d ./lib",
-    "build-css": "node-sass --include-path style src/style/index.scss lib/style/index.scss; node-sass --include-path style src/style/index.scss lib/style/index.css",
+    "build-css": "node-sass src/index.scss lib/index.css; cp src/index.scss lib/.",
     "storybook": "start-storybook"
   },
   "repository": {
