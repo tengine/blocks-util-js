@@ -51,7 +51,7 @@ ReactDOM.render(<Main />, document.getElementById('container'));
 
 ```
 git clone git@github.com:tengine/blocks-util-js.git
-yarn install
+npm install
 ```
 
 production build:
@@ -63,8 +63,11 @@ npm run build
 development build:
 
 ```
-npm run watch:docs
-or
-npm run build:docs
-// => open your browser docs/index.html
+npm run storybook
+```
+
+Update GitHub Pages (Demo):
+
+```
+npm run deploy-storybook
 ```
