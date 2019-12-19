@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import MuiTextField from 'material-ui/TextField';
-import _ from 'lodash';
 import { grey300, grey400, grey700 } from 'material-ui/styles/colors';
 
 const styles = {
@@ -71,16 +70,16 @@ export const TextField = ({
   return (
     <MuiTextField
       { ...props }
-       style={ _.defaults(style, styles.root) }
-       inputStyle={ _.defaults(inputStyle, styles.input) }
-       textareaStyle={ _.defaults(textareaStyle, styles.textarea) }
-       hintStyle={ _.defaults(hintStyle, styles.hint) }
-       errorStyle={ _.defaults(errorStyle, styles.error) }
-       floatingLabelStyle={ _.defaults(floatingLabelStyle, styles.floatingLabel) }
-       floatingLabelFocusStyle={ _.defaults(floatingLabelFocusStyle, styles.floatingLabelFocus) }
-       underlineStyle={ _.defaults(underlineStyle, styles.underline) }
-       underlineFocusStyle={ _.defaults(underlineFocusStyle, styles.underlineFocus) }
-       underlineDisabledStyle={ _.defaults(underlineDisabledStyle, styles.underlineDisabled) }
+       style={{...styles.root, ...style}}
+       inputStyle={{...styles.input, ...inputStyle}}
+       textareaStyle={{...styles.textarea, ...textareaStyle}}
+       hintStyle={{...styles.hint, ...hintStyle}}
+       errorStyle={{...styles.error, ...errorStyle}}
+       floatingLabelStyle={{...styles.floatingLabel, ...floatingLabelStyle}}
+       floatingLabelFocusStyle={{...styles.floatingLabelFocus, ...floatingLabelFocusStyle}}
+       underlineStyle={{...styles.underline, ...underlineStyle}}
+       underlineFocusStyle={{...styles.underlineFocus, ...underlineFocusStyle}}
+       underlineDisabledStyle={{...styles.underlineDisabled, ...underlineDisabledStyle}}
       />
   )
 }

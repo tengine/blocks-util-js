@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import MuiFontIcon from 'material-ui/FontIcon';
 import classnames from 'classnames';
-import _ from 'lodash';
 
 const styles = {
   root: {
@@ -15,7 +14,7 @@ export const FontAwesome = ({ style, children, ...props }) => {
     <MuiFontIcon
       { ...props }
       className={ classnames("fa", children) }
-      style={ _.defaults(style, styles.root) }
+      style={{...styles.root, ...style}}
     >
     { null }
     </MuiFontIcon>

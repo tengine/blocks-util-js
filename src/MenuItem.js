@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import MuiMenuItem from 'material-ui/MenuItem';
-import _ from 'lodash';
 
 const styles = {
   root: {
@@ -14,8 +13,8 @@ export const MenuItem = ({style, innerDivStyle, ...props}) => {
     <MuiMenuItem
       { ...props }
       autoWidth={false}
-       style={ _.defaults(style, styles.root) }
-       innerDivStyle={ _.defaults(innerDivStyle, styles.innerDiv) }
+       style={{...styles.root, ...style}}
+       innerDivStyle={{...styles.innerDiv, ...innerDivStyle}}
       />
   )
 }

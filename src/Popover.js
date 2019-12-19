@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import MuiPopover from 'material-ui/Popover';
 import classnames from 'classnames';
-import _ from 'lodash';
 
 const styles = {
   root: {
@@ -14,8 +13,8 @@ const styles = {
 export const Popover = ({ arrow, style, className, ...props }) => {
   return (
     <MuiPopover
-      style={ _.defaults(style, styles.root) }
-      className={ classnames(className, 'triangle', `triangle-${arrow}`) }
+      style={{...styles.root, ...style}}
+      className={classnames('triangle', `triangle-${arrow}`, className)}
       { ...props }
       />
   )

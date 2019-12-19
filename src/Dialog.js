@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import MuiDialog from 'material-ui/Dialog';
-import _ from 'lodash';
 import { cyan600, grey300 } from 'material-ui/styles/colors';
 
 const styles = {
@@ -28,11 +27,11 @@ export const Dialog = ({ style, titleStyle, bodyStyle, contentStyle, actionsCont
   return (
     <MuiDialog
       { ...props }
-       style={ _.defaults(style, styles.root) }
-       titleStyle={ _.defaults(titleStyle, styles.title) }
-       bodyStyle={ _.defaults(bodyStyle, styles.body) }
-       contentStyle={ _.defaults(contentStyle, styles.content) }
-       actionsContainerStyle={ _.defaults(actionsContainerStyle, styles.actionsContainer) }
+       style={{...style, ...styles.root}}
+       titleStyle={{...styles.title, ...titleStyle}}
+       bodyStyle={{...styles.body, ...bodyStyle}}
+       contentStyle={{...styles.content, ...contentStyle}}
+       actionsContainerStyle={{...styles.actionsContainer, ...actionsContainerStyle}}
       >
       { children }
     </MuiDialog>

@@ -1,4 +1,3 @@
-import _ from 'lodash';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import {
   white, 

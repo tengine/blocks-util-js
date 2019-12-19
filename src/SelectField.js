@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import MuiSelectField from 'material-ui/SelectField';
-import _ from 'lodash';
 import { grey300, grey700 } from 'material-ui/styles/colors';
 
 const styles = {
@@ -79,18 +78,18 @@ export const SelectField = ({
   return (
     <MuiSelectField
       { ...props }
-        style={ _.defaults(style, styles.root) }
-        inputStyle={ _.defaults(inputStyle, styles.input) }
-        labelStyle={ _.defaults(labelStyle, styles.label) }
-        menuStyle={ _.defaults(menuStyle, styles.menu) }
-        iconStyle={ _.defaults(iconStyle, styles.icon) }
-        hintStyle={ _.defaults(hintStyle, styles.hint) }
-        errorStyle={ _.defaults(errorStyle, styles.error) }
-        floatingLabelStyle={ _.defaults(floatingLabelStyle, styles.floatingLabel) }
-        floatingLabelFocusStyle={ _.defaults(floatingLabelFocusStyle, styles.floatingLabelFocus) }
-        underlineStyle={ _.defaults(underlineStyle, styles.underline) }
-        underlineFocusStyle={ _.defaults(underlineFocusStyle, styles.underlineFocus) }
-        underlineDisabledStyle={ _.defaults(underlineDisabledStyle, styles.underlineDisabled) }
+        style={{...styles.root, ...style}}
+        inputStyle={{...styles.input, ...inputStyle}}
+        labelStyle={{...styles.label, ...labelStyle}}
+        menuStyle={{...styles.menu, ...menuStyle}}
+        iconStyle={{...styles.icon, ...iconStyle}}
+        hintStyle={{...styles.hint, ...hintStyle}}
+        errorStyle={{...styles.error, ...errorStyle}}
+        floatingLabelStyle={{...styles.floatingLabel, ...floatingLabelStyle}}
+        floatingLabelFocusStyle={{...styles.floatingLabelFocus, ...floatingLabelFocusStyle}}
+        underlineStyle={{...styles.underline, ...underlineStyle}}
+        underlineFocusStyle={{...styles.underlineFocus, ...underlineFocusStyle}}
+        underlineDisabledStyle={{...styles.underlineDisabled, ...underlineDisabledStyle}}
       >
       { children }
     </MuiSelectField>

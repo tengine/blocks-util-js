@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import MuiFontIcon from 'material-ui/FontIcon';
-import _ from 'lodash';
 
 const styles = {
   root: {
@@ -14,7 +13,7 @@ export const MaterialIcon = ({ style, children, ...props }) => {
     <MuiFontIcon
       { ...props }
       className="material-icons"
-      style={ _.defaults(style, styles.root) }
+      style={{...styles.root, ...style}}
       >
       { children }
     </MuiFontIcon>
