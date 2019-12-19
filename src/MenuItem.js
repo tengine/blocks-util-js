@@ -8,13 +8,14 @@ const styles = {
   }
 }
 
-export const MenuItem = ({style, innerDivStyle, ...props}) => {
+const MenuItem = ({style, innerDivStyle, ...props}) => {
   return (
     <MuiMenuItem
-      { ...props }
       autoWidth={false}
-       style={{...styles.root, ...style}}
-       innerDivStyle={{...styles.innerDiv, ...innerDivStyle}}
+      style={{...styles.root, ...style}}
+      innerDivStyle={{...styles.innerDiv, ...innerDivStyle}}
+      { ...props }
       />
   )
 }
+export default MenuItem

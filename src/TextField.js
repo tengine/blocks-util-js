@@ -53,7 +53,7 @@ const styles = {
   },
 }
 
-export const TextField = ({ 
+const TextField = ({ 
   style, 
   inputStyle, 
   textareaStyle, 
@@ -83,3 +83,4 @@ export const TextField = ({
       />
   )
 }
+export default TextField

@@ -9,7 +9,7 @@ const styles = {
   }
 }
 
-export const FontAwesome = ({ style, children, ...props }) => {
+const FontAwesome = ({ style, children, ...props }) => {
   return (
     <MuiFontIcon
       { ...props }
@@ -20,3 +20,4 @@ export const FontAwesome = ({ style, children, ...props }) => {
     </MuiFontIcon>
   )
 }
+export default FontAwesome

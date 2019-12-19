@@ -59,7 +59,7 @@ const styles = {
   },
 }
 
-export const SelectField = ({ 
+const SelectField = ({ 
   style,
   inputStyle,
   labelStyle, 
@@ -95,3 +95,4 @@ export const SelectField = ({
     </MuiSelectField>
   )
 }
+export default SelectField

@@ -8,7 +8,7 @@ const styles = {
   }
 }
 
-export const MaterialIcon = ({ style, children, ...props }) => {
+const MaterialIcon = ({ style, children, ...props }) => {
   return (
     <MuiFontIcon
       { ...props }
@@ -19,3 +19,4 @@ export const MaterialIcon = ({ style, children, ...props }) => {
     </MuiFontIcon>
   )
 }
+export default MaterialIcon
