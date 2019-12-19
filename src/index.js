@@ -1,6 +1,7 @@
 import React from 'react';
 
 import defaultTheme from './Theme';
+import * as colors from './colors';
 import AutoComplete from './AutoComplete';
 import Avatar from './Avatar';
 import Card from './Card';
@@ -37,6 +38,7 @@ const withChildren = (Component, {children, ...props}) => (
 
 export {
   withChildren,
+  colors,
   defaultTheme,
   AutoComplete,
   Avatar,
