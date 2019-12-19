@@ -58,6 +58,14 @@ const defaultTheme = getMuiTheme({
   checkbox: {
     checkedColor: lightBlue800,
   },
+  datePicker: {
+    color: lightBlue800, // 年選択モード時のアクティブなテキスト色
+    textColor: white, // ヘッダのテキスト色
+    calendarYearBackgroundColor: white, // 年選択モードの背景色
+    selectColor: lightBlue800,
+    selectTextColor: white,
+    headerColor: lightBlue800, // ヘッダの背景色
+  },
 });
 
 export default defaultTheme
