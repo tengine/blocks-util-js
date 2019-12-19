@@ -7,11 +7,10 @@
     "lib"
   ],
   "scripts": {
-    "build": "babel ./src -d ./lib",
-    "build-css": "node-sass --include-path style style/index.scss lib/index.css",
-    "build:docs": "NODE_ENV=production webpack --mode production -p --config ./webpack.config.prod.js",
-    "watch:docs": "NODE_ENV=development webpack --mode development --watch",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npm run build-css && babel ./src -d ./lib",
+    "build-css": "node-sass src/index.scss lib/index.css; cp src/index.scss lib/.",
+    "storybook": "start-storybook",
+    "deploy-storybook": "storybook-to-ghpages"
   },
   "repository": {
     "type": "git",
@@ -23,27 +22,27 @@
     "url": "https://github.com/tengine/blocks-util-js/issues"
   },
   "homepage": "https://github.com/tengine/blocks-util-js#readme",
+  "peerDependencies": {
+    "material-ui": "0.16.x",
+    "react": "15.6.x",
+    "react-dom": "^15.6.x"
+  },
   "dependencies": {
-    "@babel/cli": "^7.2.3",
     "classnames": "^2.2.5",
-    "lodash": "^4.17.2",
-    "material-ui": "^0.20.2",
-    "react": "^16.3.2",
-    "react-dom": "16.3.3"
+    "material-ui": "^0.16.7",
+    "react": "^15.6.2",
+    "react-dom": "^15.6.2"
   },
   "devDependencies": {
+    "@babel/cli": "^7.2.3",
     "@babel/core": "^7.2.2",
     "@babel/plugin-proposal-class-properties": "^7.2.3",
     "@babel/preset-env": "^7.2.3",
     "@babel/preset-react": "^7.0.0",
-    "babel-loader": "^8.0.4",
-    "babel-plugin-espower": "^2.3.1",
-    "css-loader": "^2.0.1",
-    "node-sass": "^4.11.0",
-    "power-assert": "^1.4.2",
-    "sass-loader": "^7.1.0",
-    "style-loader": "^0.23.1",
-    "webpack": "^4.28.1",
-    "webpack-cli": "^3.1.2"
+    "@storybook/addon-actions": "^5.2.6",
+    "@storybook/react": "^5.2.6",
+    "@storybook/storybook-deployer": "^2.8.1",
+    "babel-loader": "^8.0.6",
+    "node-sass": "^4.11.0"
   }
 }
