@@ -10,7 +10,7 @@ const styles = {
   }
 }
 
-export const Popover = ({ arrow, style, className, ...props }) => {
+const Popover = ({ arrow, style, className, ...props }) => {
   return (
     <MuiPopover
       style={{...styles.root, ...style}}
@@ -19,3 +19,4 @@ export const Popover = ({ arrow, style, className, ...props }) => {
       />
   )
 }
+export default Popover

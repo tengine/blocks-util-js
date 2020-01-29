@@ -23,7 +23,7 @@ const styles = {
   },
 };
 
-export const Dialog = ({ style, titleStyle, bodyStyle, contentStyle, actionsContainerStyle, children, ...props }) => {
+const Dialog = ({ style, titleStyle, bodyStyle, contentStyle, actionsContainerStyle, children, ...props }) => {
   return (
     <MuiDialog
       { ...props }
@@ -37,3 +37,4 @@ export const Dialog = ({ style, titleStyle, bodyStyle, contentStyle, actionsCont
     </MuiDialog>
   )  
 }
+export default Dialog
