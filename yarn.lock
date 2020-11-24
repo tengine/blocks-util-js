@@ -1935,7 +1935,7 @@ fault@^1.0.0:
   dependencies:
     format "^0.2.0"
 
-fbjs@^0.8.1, fbjs@^0.8.6, fbjs@^0.8.9:
+fbjs@^0.8.1, fbjs@^0.8.9:
   version "0.8.17"
   resolved "https://registry.yarnpkg.com/fbjs/-/fbjs-0.8.17.tgz#c4d598ead6949112653d6588b01a5cdcd9f90fdd"
   integrity sha1-xNWY6taUkRJlPWWIsBpc3Nn5D90=
@@ -3946,13 +3946,6 @@ react-syntax-highlighter@^4.0.1:
     babel-runtime "^6.18.0"
     highlight.js "~9.8.0"
     lowlight "^1.5.0"
-
-react-tap-event-plugin@^2.0.1:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/react-tap-event-plugin/-/react-tap-event-plugin-2.0.1.tgz#316beb3bc6556e29ec869a7293e89c826a9074d2"
-  integrity sha1-MWvrO8ZVbinshppyk+icgmqQdNI=
-  dependencies:
-    fbjs "^0.8.6"
 
 react-transition-group@^1.2.1:
   version "1.2.1"
